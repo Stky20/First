@@ -20,10 +20,10 @@ public class Task10 {
 		
 		while(sc.hasNextDouble()) {
 			x = sc.nextDouble();
-			if (x <= -3d) {
+			if (x <= -3) {
 				fun = 9;
 				System.out.println("F(x) = " + fun);
-			} else if (x > 3d){
+			} else if (x > 3){
 				fun = 1 / ( x * x + 1);
 				System.out.println("F(x) = " + fun);
 			} else {
