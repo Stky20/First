@@ -1,0 +1,3 @@
+1/ nickName=/stan/ password=/1234/ name=/null/ surname=/null
+2/ nickName=/ken/ password=/1111/ name=/null/ surname=/null
+3/ nickName=/tommy/ password=/4321/ name=/tom/ surname=/vercetti
