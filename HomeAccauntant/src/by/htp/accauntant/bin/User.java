@@ -25,6 +25,20 @@ public class User {
 		this.surname = null;
 		this.e_mail = null;
 	}
+	
+	public User(String nickName, String password, String name, String surname, String e_mail) {
+		this.nickName = nickName;
+		
+		if(password.isEmpty()) {
+			this.hashPassword = new HashPassword();
+		}else {
+			this.hashPassword = new HashPassword(password);
+		}
+		
+		this.name = name;
+		this.surname = surname;
+		this.e_mail = e_mail;
+	}
 
 
 	public User(int id, String nickName, String hashPassword, String name, String surname, String e_mail) {
@@ -67,8 +81,8 @@ public class User {
 	}
 	
 	
-	public HashPassword getHashPassword() {
-		return hashPassword;
+	public String getHashPassword() {
+		return hashPassword.getHashPassword();
 	}
 
 

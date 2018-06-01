@@ -7,6 +7,7 @@ public interface UserDAO {
 	
 	public boolean addUser(User user);
 	public boolean checkIfUserInBase(User user);
+	public boolean checkLoginInDB(User user);
 	public User login(User user);
 	public User editUser (User user, User newUser);
 	public boolean removeUser (User user);
